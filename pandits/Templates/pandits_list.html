@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pandit List</title>
+</head>
+<body>
+    <h1>Pandit List</h1>
+    <ul>
+        {% for pandit in pandits %}
+            <li>
+                <strong>Name:</strong> {{ pandit.name }}<br>
+                <strong>Experience:</strong> {{ pandit.experience }} Years<br>
+                <strong>Phone:</strong> {{ pandit.contact_info }}<br>
+                <strong>Address:</strong> {{ pandit.location }}<br>
+                <strong>Expertise:</strong> {{ pandit.specialization }}<br>
+                <strong>Language Fluent:</strong> {{ pandit.languages }}<br>
+                <strong>Availability:</strong> {{ pandit.availability }}<br>
+                <strong>Email Address:</strong> {{ pandit.email }}<br>
+            </li>
+        {% empty %}
+            <li>No pandits available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

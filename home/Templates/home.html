@@ -1,0 +1,144 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/logoo.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>E GURUJI</title>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</head>
+<body class="background">
+    <!-- NAV BAR -->
+    <header class="navbar">
+        <div class="container">
+            <a class="logo" href="{% static 'index.html' %}">
+                <img src="{% static 'images/logoo.png' %}" alt="Logo">
+            </a>
+            {% comment %} <nav class="nav-links">
+                <a href="{% url 'home.html' %}">Home</a>
+                <a href="{ 'ser.html' }">Services</a>
+                <a href="{% url 'about' %}">About Us</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </nav>  {% endcomment %}
+            <nav class="nav-links">
+                <a href="{% static 'home.html' %}">Home</a>
+                <a href="{% static 'ser.html' %}">Services</a>
+                <a href="{% static 'about.html' %}">About Us</a>
+                <a href="{% static 'contact.html' %}">Contact</a> 
+            </nav> 
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search POOJA" class="search-input">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- FIRST SECTION -->
+    <section class="first-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="button-container">
+                    <a href="{% static 'log.html' %}" class="ancient-button">Book Now</a>
+                </div>
+                <h1>WHY TO CHOOSE E-GURUJI</h1>
+                <p>.......</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <h2>Safe and Reliable</h2>
+                    <p>We assure highly qualified Panditjis at your desired mahurat and location.</p>
+                </div>
+                <div class="feature">
+                    <h2>Quick and Convenient</h2>
+                    <p>One stop solution for all your puja needs. Get your Panditji, Mahurat and Samagri in just a few clicks!</p>
+                </div>
+                <div class="feature">
+                    <h2>Quality Assurance</h2>
+                    <p>Our Team closely monitors the quality and packaging of the Samagri kit, To ensure only the best quality products are used in the Puja.</p>
+                </div>
+                <div class="feature">
+                    <h2>Best Service</h2>
+                    <p>Works for the objective of “Customer Delight”. We ensure 100% customer assistance and customer support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PROCEDURE -->
+    <section class="procedure">
+        <div class="container">
+            <div class="procedure-steps">
+                <div class="step">
+                    <div class="step-icon"><img src="{% static 'images/pick your puja-05.png' %}" alt="Step 2"></div>
+                    <div class="step-content">
+                        <h2>STEP 1</h2>
+                        <p>Select Muhurth.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><img src="{% static 'images/select_muhrat.png' %}" alt="Step 3"></div>
+                    <div class="step-content">
+                        <h2>STEP 2</h2>
+                        <p>Book a Puja.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><img src="{% static 'images/book_puja.png' %}" alt="Step 4"></div>
+                    <div class="step-content">
+                        <h2>STEP 3</h2>
+                        <p>Make Payment.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><img src="{% static 'images/perform puja.png' %}" alt="Finish"></div>
+                    <div class="step-content">
+                        <h2>STEP 4</h2>
+                        <p>Perform Puja at Muhurth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h2>CUSTOMER SUPPORT</h2>
+                    <nav class="footer-links">
+                        <a href="mailto:customer@eguruji.com">customer@eguruji.com</a>
+                        <a href="tel:+9191XXXXXX69">+91 91XXXXXX69</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h2>INFO</h2>
+                    <nav class="footer-links">
+                        <a href="#">Cancellation Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Erase my data</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h2>KEEP UP TO DATE</h2>
+                    <div class="newsletter">
+                        <label for="footer-field">Your Email Here</label>
+                        <input type="text" id="footer-field" name="footer-field">
+                        <button class="subscribe">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 E-GURUJI</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

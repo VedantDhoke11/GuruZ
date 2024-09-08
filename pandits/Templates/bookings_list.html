@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookings List</title>
+</head>
+<body>
+    <h1>Bookings</h1>
+    <ul>
+        {% for booking in bookings %}
+            <li>
+                <strong>User:</strong> {{ booking.user.name }}<br>
+                <strong>Pandit:</strong> {{ booking.pandit.name }}<br>
+                <strong>Service:</strong> {{ booking.service.name }}<br>
+                <strong>Date:</strong> {{ booking.date }}<br>
+                <strong>Time:</strong> {{ booking.time }}<br>
+                <strong>Location:</strong> {{ booking.location }}
+            </li>
+        {% empty %}
+            <li>No bookings available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
